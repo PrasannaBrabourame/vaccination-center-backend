@@ -45,7 +45,7 @@ app.use(process.env.PARSE_SERVER_PATH, parse.app)
 const dashboard = new ParseDashboard(
     {
         customBrandIcon: 'icon-bw.jpg',
-        customBrandTitle: 'CARDSPE ADMIN',
+        customBrandTitle: 'SG VAC ADMIN',
         customBrandColorPrimary: '#853e3b',
         apps: [
             {
