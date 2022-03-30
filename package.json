@@ -1,0 +1,28 @@
+{
+  "name": "vaccination-center-backend",
+  "version": "1.0.0",
+  "description": "Vaccination Center With Parse Try Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrasannaBrabourame/vaccination-center-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrasannaBrabourame/vaccination-center-backend/issues"
+  },
+  "homepage": "https://github.com/PrasannaBrabourame/vaccination-center-backend#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "parse-dashboard": "^4.0.1",
+    "parse-server": "^5.2.0"
+  }
+}

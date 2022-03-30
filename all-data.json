@@ -1,0 +1,621 @@
+{
+  "VaccineReservation": [],
+  "VaccinationCenter": [
+    {
+      "objectId": 100,
+      "name": "Radin Mas Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 100
+    },
+    {
+      "objectId": 101,
+      "name": "Buona Vista Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 101
+    },
+    {
+      "objectId": 102,
+      "name": "Raffles City Convention Centre",
+      "active": true,
+      "location": "Central",
+      "code": 102
+    },
+    {
+      "objectId": 103,
+      "name": "Tanjong Pagar Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 103
+    },
+    {
+      "objectId": 104,
+      "name": "Jalan Besar Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 104
+    },
+    {
+      "objectId": 105,
+      "name": "Bishan Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 105
+    },
+    {
+      "objectId": 106,
+      "name": "Queenstown Community Centre",
+      "active": true,
+      "location": "Central",
+      "code": 106
+    },
+    {
+      "objectId": 107,
+      "name": "Toa Payoh West Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 107
+    },
+    {
+      "objectId": 108,
+      "name": "Marine Parade Community Club",
+      "active": true,
+      "location": "Central",
+      "code": 108
+    },
+    {
+      "objectId": 109,
+      "name": "Tampines East Community Club",
+      "active": true,
+      "location": "East",
+      "code": 109
+    },
+    {
+      "objectId": 110,
+      "name": "Bedok Community Centre",
+      "active": true,
+      "location": "East",
+      "code": 110
+    },
+    {
+      "objectId": 111,
+      "name": "Pasir Ris Elias Community Club",
+      "active": true,
+      "location": "East",
+      "code": 111
+    },
+    {
+      "objectId": 112,
+      "name": "Arena@ Our Tampines Hub (Hockey Court)",
+      "active": true,
+      "location": "East",
+      "code": 112
+    }
+  ],
+  "VaccineSlots": [
+    {
+      "objectId": 100,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "100",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 100
+    },
+    {
+      "objectId": 101,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "100",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 101
+    },
+    {
+      "objectId": 102,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "100",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 102
+    },
+    {
+      "objectId": 103,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "101",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 103
+    },
+    {
+      "objectId": 104,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "101",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 104
+    },
+    {
+      "objectId": 105,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "101",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 105
+    },
+    {
+      "objectId": 106,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "102",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 106
+    },
+    {
+      "objectId": 107,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "102",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 107
+    },
+    {
+      "objectId": 108,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "102",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 108
+    },
+    {
+      "objectId": 109,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "103",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 109
+    },
+    {
+      "objectId": 110,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "103",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 110
+    },
+    {
+      "objectId": 111,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "103",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 111
+    },
+    {
+      "objectId": 112,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "104",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 112
+    },
+    {
+      "objectId": 113,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "104",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 113
+    },
+    {
+      "objectId": 114,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "104",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 114
+    },
+    {
+      "objectId": 115,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "105",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 115
+    },
+    {
+      "objectId": 116,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "105",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 116
+    },
+    {
+      "objectId": 117,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "105",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 117
+    },
+    {
+      "objectId": 118,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "106",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 118
+    },
+    {
+      "objectId": 119,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "106",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 119
+    },
+    {
+      "objectId": 120,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "106",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 120
+    },
+    {
+      "objectId": 121,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "107",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 121
+    },
+    {
+      "objectId": 122,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "107",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 122
+    },
+    {
+      "objectId": 123,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "107",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 123
+    },
+    {
+      "objectId": 124,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "108",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 124
+    },
+    {
+      "objectId": 125,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "108",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 125
+    },
+    {
+      "objectId": 126,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "108",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 126
+    },
+    {
+      "objectId": 127,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "109",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 127
+    },
+    {
+      "objectId": 128,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "109",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 128
+    },
+    {
+      "objectId": 129,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "109",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 129
+    },
+    {
+      "objectId": 130,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "110",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 130
+    },
+    {
+      "objectId": 131,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "110",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 131
+    },
+    {
+      "objectId": 132,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "110",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 132
+    },
+    {
+      "objectId": 133,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "111",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 133
+    },
+    {
+      "objectId": 134,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "111",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 134
+    },
+    {
+      "objectId": 135,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "111",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 135
+    },
+    {
+      "objectId": 136,
+      "date": 1648598400000,
+      "center": {
+        "objectId": "112",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 136
+    },
+    {
+      "objectId": 137,
+      "date": 1648684800000,
+      "center": {
+        "objectId": "112",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 137
+    },
+    {
+      "objectId": 138,
+      "date": 1648771200000,
+      "center": {
+        "objectId": "112",
+        "className": "VaccinationCenter"
+      },
+      "totalSlots": 54,
+      "remainingSlots": 54,
+      "code": 138
+    }
+  ],
+  "TimeSlots": [
+    {
+      "objectId": "Bnk6wbHnpp",
+      "time": "8AM - 9AM",
+      "active": true,
+      "code": 100
+    },
+    {
+      "objectId": "JMUlWFfJxu",
+      "time": "9AM - 10AM",
+      "active": true,
+      "code": 101
+    },
+    {
+      "objectId": "c7eSMKVLUN",
+      "time": "10AM - 11AM",
+      "active": true,
+      "code": 102
+    },
+    {
+      "objectId": "1ORdCqA0pl",
+      "time": "11AM - 12PM",
+      "active": true,
+      "code": 103
+    },
+    {
+      "objectId": "1Wjpcs5ysT",
+      "time": "12PM - 1PM",
+      "active": true,
+      "code": 104
+    },
+    {
+      "objectId": "gcUqHDWlpj",
+      "time": "2PM - 3PM",
+      "active": true,
+      "code": 105
+    },
+    {
+      "objectId": "3coHiqEbvE",
+      "time": "3PM - 4PM",
+      "active": true,
+      "code": 106
+    },
+    {
+      "objectId": "MUpMShyPDY",
+      "time": "4PM - 5PM",
+      "active": true,
+      "code": 107
+    },
+    {
+      "objectId": "WtfUfqo5ht",
+      "time": "5PM - 6PM",
+      "active": true,
+      "code": 108
+    }
+  ],
+  "MinutesSlots": [
+    {
+      "objectId": "VbSNhKsB1r",
+      "mins": "00:00 - 00:10 ",
+      "active": true,
+      "code": 100
+    },
+    {
+      "objectId": "zaiCYnhZ1z",
+      "mins": "00:10 - 00:20",
+      "active": true,
+      "code": 101
+    },
+    {
+      "objectId": "qOkx7I7ghS",
+      "mins": "00:20 - 00:30",
+      "active": true,
+      "code": 102
+    },
+    {
+      "objectId": "c2IGEvit5b",
+      "mins": "00:30 - 00:40",
+      "active": true,
+      "code": 103
+    },
+    {
+      "objectId": "O4XB76In3k",
+      "mins": "00:40 - 00:50",
+      "active": true,
+      "code": 105
+    },
+    {
+      "objectId": "y1y25Et5bn",
+      "mins": "00:50 - 00:60",
+      "active": true,
+      "code": 106
+    }
+  ]
+}
