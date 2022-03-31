@@ -33,7 +33,7 @@ Parse.Cloud.define('fetchVaccineCenterList', async () => {
     } catch (err) {
         return {
             status: false, data: {
-                code: '1001'
+                code: '1002'
             }
         }
     }

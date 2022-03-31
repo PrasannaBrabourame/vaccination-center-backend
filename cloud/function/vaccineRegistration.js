@@ -16,20 +16,27 @@ Parse.Cloud.define('registerVaccination', async ({ params }) => {
             return {
                 status: true, data: {
                     isExist: "User Already Registered Vaccination",
-                    response: isAvailable.toJSON()
+                }
+            }
+        }
+        const sameTime = await pAll.first('VaccineReservation', { timeSlots: pAll.pointer('TimeSlots', `${vaccineTime}`), minSlots: pAll.pointer('MinutesSlots', `${vaccineMin}`), date: `${vaccineDate}`, vaccineCenter: pAll.pointer('VaccinationCenter', `${vaccineCenter}`) }, 'VaccinationCenter', 'MinutesSlots')
+        if (sameTime) {
+            return {
+                status: true, data: {
+                    sameTime: "Someone already registered for this time slot"
                 }
             }
         }
         const register = await pAll.insert('VaccineReservation', { vaccineCenter: pAll.pointer('VaccinationCenter', `${vaccineCenter}`), timeSlots: pAll.pointer('TimeSlots', `${vaccineTime}`), minSlots: pAll.pointer('MinutesSlots', `${vaccineMin}`), date: `${vaccineDate}`, name, nric })
         return {
             status: true, data: {
-                response: []
+                response: register
             }
         }
     } catch (err) {
         return {
             status: false, data: {
-                code: '1001'
+                code: '1003'
             }
         }
     }
