@@ -54,15 +54,7 @@ const dashboard = new ParseDashboard(
                 production: 'Test',
                 masterKey: process.env.SDK_MASTER_KEY,
                 readOnlyMasterKey: process.env.SDK_MASTER_READ_KEY,
-                serverURL,
-                primaryBackgroundColor: process.env.DASHBOARD_PRIMARY_BACKGROUND_COLOR || '#169CEE',
-                secondaryBackgroundColor: process.env.DASHBOARD_SECONDARY_BACKGROUND_COLOR || '#853e3b'
-            }
-        ],
-        users: [
-            {
-                user: process.env.DASHBOARD_USERNAME,
-                pass: process.env.DASHBOARD_PASSWORD,
+                serverURL
             }
         ]
     },

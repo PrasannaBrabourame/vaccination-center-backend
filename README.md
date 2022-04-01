@@ -26,4 +26,12 @@ $ node install/import-data.js
 $ node app.js
 ```
 
+## Dashboard Details
+* [Dashboard URL](http://localhost:1550/dashboard/apps/HOMEAGE/)
 
+Which will Act as a admin panel to manage
+1. Vaccination Centers (Add/Edit/Update/Delete)
+2. Daily Availability of Vaccination Slots (Add/Edit/Update/Delete)
+
+## Conditions
+1. Considering Each Registration Time for Vaccination is 10 minutes based on the for an hour we have splited the time into 6 each 10 mins.
