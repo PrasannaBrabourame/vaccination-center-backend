@@ -2,16 +2,15 @@
  *                                                                              *
  * Author       :  Prasanna Brabourame                                          *
  * Version      :  1.0.0                                                        *
- * Date         :  31 Mar 2021                                                  *
+ * Date         :  01 Apr 2022                                                  *
  ********************************************************************************/
 
 /**
- * Cloud Code used to fetch the product category
+ * Cloud Code used to fetch the Hours and Mins Available Slots
  * @async
  * @function fetchSlots
  * @returns {Object} Status
  */
-
 Parse.Cloud.define('fetchSlots', async () => {
     try {
         const pAll = require('../../helpers/p').p(undefined, true)
@@ -25,7 +24,7 @@ Parse.Cloud.define('fetchSlots', async () => {
     } catch (err) {
         return {
             status: false, data: {
-                code: '1001'
+                code: '1002'
             }
         }
     }

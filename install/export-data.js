@@ -2,7 +2,7 @@
  *                                                                              *
  * Author       :  Prasanna Brabourame                                          *
  * Version      :  1.0.0                                                        *
- * Date         :  31 Mar 2021                                                  *
+ * Date         :  01 Apr 2022                                                 *
  ********************************************************************************/
 
 const local = true
@@ -12,7 +12,6 @@ const p = require('../helpers/p').p(undefined, true)
 const fs = require('fs')
 
 const items = [
-  'VaccineReservation',
   'VaccinationCenter',
   'VaccineSlots',
   'TimeSlots',
@@ -26,7 +25,7 @@ const classNameChanges = {
 const extraPropertiesForClasses = {}
 
 const propertyNameChanges = {
-  // code: 'id',
+
 }
 const fixBoolean = value => value == 1
 const propertyTypeChanges = { // fixes boolean types

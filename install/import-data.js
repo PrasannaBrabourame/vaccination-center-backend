@@ -2,14 +2,13 @@
  *                                                                              *
  * Author       :  Prasanna Brabourame                                          *
  * Version      :  1.0.0                                                        *
- * Date         :  31 Mar 2021                                                  *
+ * Date         :  01 Apr 2022                                                 *
  ********************************************************************************/
 
 const local = true
 const Parse = global.Parse = require(`../helpers/init${local ? '' : '-remote'}`)
-
 const p = require('../helpers/p').p(undefined, true)
-
+const moment = require('moment');
 const includedClasses = [
 
 ]
@@ -57,7 +56,7 @@ const instance = (className, data) => {
         index[data.objectId] = data.code
     }
     if (data.hasOwnProperty('date')) {
-        data.date = new Date(data.date);
+        data.date = moment(new Date(data.date)).format('DD-MM-YYYY');
     }
     const instance = p.instance(className, fixData(data))
     if (data.hasOwnProperty('code')) {

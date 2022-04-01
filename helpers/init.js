@@ -2,9 +2,10 @@
  *                                                                              *
  * Author       :  Prasanna Brabourame                                          *
  * Version      :  1.0.0                                                        *
- * Date         :  31 Mar 2021                                                  *
+ * Date         :  01 Apr 2022                                                  *
  ********************************************************************************/
 
+// Master Configs
 require('dotenv').config()
 const Parse = require('parse/node')
 Parse.serverURL = `${process.env.PARSE_SERVER_URL}${process.env.PARSE_SERVER_PATH}`
