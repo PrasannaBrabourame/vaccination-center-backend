@@ -32,7 +32,7 @@ Parse.Cloud.define('registerVaccination', async ({ params }) => {
                 }
             }
         }
-        const sameTime = await pAll.first('VaccineReservation', { timeSlots: pAll.pointer('TimeSlots', `${vaccineTime}`), minSlots: pAll.pointer('MinutesSlots', `${vaccineMin}`), date: `${vaccineDate}`, vaccineCenter: pAll.pointer('VaccinationCenter', `${vaccineCenter}`) }, 'VaccinationCenter', 'MinutesSlots')
+        const sameTime = await pAll.first('VaccineReservation', { timeSlots: pAll.pointer('TimeSlots', `${vaccineTime}`), minSlots: pAll.pointer('MinutesSlots', `${vaccineMin}`), date: `${vaccineDate}`, vaccineCenter: pAll.pointer('VaccinationCenter', `${vaccineCenter}`) }, 'VaccinationCenter', 'MinutesSlots','TimeSlots')
         if (sameTime) {
             return {
                 status: false, data: {
@@ -78,14 +78,6 @@ Parse.Cloud.define('updateVaccinationDetails', async ({ params }) => {
     try {
         const { vaccineCenter, vaccineDate, vaccineMin, vaccineTime, name, nric } = params
         const pAll = require('../../helpers/p').p(undefined, true)
-        const isAvailable = await pAll.first('VaccineReservation', { nric }, 'VaccinationCenter', 'MinutesSlots')
-        if (isAvailable) {
-            return {
-                status: false, data: {
-                    code: '1007'
-                }
-            }
-        }
         const sameTime = await pAll.first('VaccineReservation', { timeSlots: pAll.pointer('TimeSlots', `${vaccineTime}`), minSlots: pAll.pointer('MinutesSlots', `${vaccineMin}`), date: `${vaccineDate}`, vaccineCenter: pAll.pointer('VaccinationCenter', `${vaccineCenter}`) }, 'VaccinationCenter', 'MinutesSlots')
         if (sameTime) {
             return {
@@ -172,8 +164,12 @@ Parse.Cloud.define('fetchRegistrationDetails', async ({ params }) => {
             return parsedDetail
         })
         let vaccineCenterList = combinedItems(dateResponse)
-        const timeSlots = (await pAll.all('TimeSlots', { active: true })).map(item => item.toJSON())
-        const minutesSlots = (await pAll.all('MinutesSlots', { active: true })).map(item => item.toJSON())
+        const timeSlots = (await pAll.all('TimeSlots', { active: true })).map(item => item.toJSON()).sort(function(a, b) {
+            return parseFloat(a.code) - parseFloat(b.code);
+        })
+        const minutesSlots = (await pAll.all('MinutesSlots', { active: true })).map(item => item.toJSON()).sort(function(a, b) {
+            return parseFloat(a.code) - parseFloat(b.code);
+        })
         let sortedDates = dateSort([...dates])
         return {
             status: true, data: {

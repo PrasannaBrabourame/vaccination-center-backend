@@ -55,9 +55,9 @@ const instance = (className, data) => {
     if (data.hasOwnProperty('objectId') && isNaN(data.objectId)) {
         index[data.objectId] = data.code
     }
-    if (data.hasOwnProperty('date')) {
-        data.date = moment(new Date(data.date)).format('DD-MM-YYYY');
-    }
+    // if (data.hasOwnProperty('date')) {
+    //     data.date = moment(new Date(data.date)).format('DD-MM-YYYY');
+    // }
     const instance = p.instance(className, fixData(data))
     if (data.hasOwnProperty('code')) {
         instance.id = '' + data.code

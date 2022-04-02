@@ -23,7 +23,6 @@ const config = {
     databaseURI: process.env.PARSE_SERVER_DATABASE_URI,
     cloud: process.env.CLOUD_CODE_MAIN || path.join(__dirname, '/cloud/main.js'),
     masterKey: process.env.SDK_MASTER_KEY,
-    readOnlyMasterKey: process.env.SDK_MASTER_READ_KEY,
     restAPIKey: process.env.SDK_REST_API_KEY,
     javascriptKey: process.env.SDK_JAVASCRIPT_KEY,
     serverURL,
@@ -53,7 +52,6 @@ const dashboard = new ParseDashboard(
                 appName,
                 production: 'Test',
                 masterKey: process.env.SDK_MASTER_KEY,
-                readOnlyMasterKey: process.env.SDK_MASTER_READ_KEY,
                 serverURL
             }
         ]

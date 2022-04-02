@@ -12,21 +12,26 @@
  * @returns {Array} Merged Array
  */
 const combinedItems = (arr = []) => {
-    const res = arr.reduce((acc, obj) => {
-        let found = false;
-        for (let i = 0; i < acc.length; i++) {
-            if (acc[i].vCenterCode === obj.vCenterCode) {
-                found = true;
-                acc[i][`${obj.date}`] = obj.remainingSlots
-            };
-        }
-        if (!found) {
-            obj[`${obj.date}`] = obj.remainingSlots
-            acc.push(obj);
-        }
-        return acc;
-    }, []);
-    return res;
+    try {
+        const res = arr.reduce((acc, obj) => {
+            obj.dates = {}
+            let found = false;
+            for (let i = 0; i < acc.length; i++) {
+                if (acc[i].vCenterCode === obj.vCenterCode) {
+                    found = true;
+                    acc[i].dates[`${obj.date}`] = { dates: obj.remainingSlots, nurse: obj.nurse }
+                };
+            }
+            if (!found) {
+                obj.dates[`${obj.date}`] = { dates: obj.remainingSlots, nurse: obj.nurse }
+                acc.push(obj);
+            }
+            return acc;
+        }, []);
+        return res;
+    } catch (e) {
+        console.log(e)
+    }
 }
 
 /**
@@ -35,8 +40,8 @@ const combinedItems = (arr = []) => {
  * @function dateSort
  * @returns {Array} Sorted Array
  */
-const dateSort = (arr)=>{
-   return arr.sort(function (a, b) {
+const dateSort = (arr) => {
+    return arr.sort(function (a, b) {
         let aComps = a.split("-");
         let bComps = b.split("-");
         let aDate = new Date(aComps[2], aComps[1], aComps[0]);
@@ -45,4 +50,4 @@ const dateSort = (arr)=>{
     });
 }
 
-module.exports = { combinedItems,dateSort }
+module.exports = { combinedItems, dateSort }

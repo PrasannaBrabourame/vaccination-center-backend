@@ -14,8 +14,12 @@
 Parse.Cloud.define('fetchSlots', async () => {
     try {
         const pAll = require('../../helpers/p').p(undefined, true)
-        const timeSlots = (await pAll.all('TimeSlots', { active: true })).map(item => item.toJSON())
-        const minutesSlots = (await pAll.all('MinutesSlots', { active: true })).map(item => item.toJSON())
+        const timeSlots = (await pAll.all('TimeSlots', { active: true })).map(item => item.toJSON()).sort(function(a, b) {
+            return parseFloat(a.code) - parseFloat(b.code);
+        })
+        const minutesSlots = (await pAll.all('MinutesSlots', { active: true })).map(item => item.toJSON()).sort(function(a, b) {
+            return parseFloat(a.code) - parseFloat(b.code);
+        })
         return {
             status: true, data: {
                 timeSlots, minutesSlots
